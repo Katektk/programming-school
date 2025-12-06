@@ -9,6 +9,10 @@
             <button>Заказать звонок</button>
             </form>
         </div>
+        <div class="fullwidth">
+            <img class="banner-wave1" src="@/assets/images/wave.svg" alt="">
+            <img class="banner-wave2" src="@/assets/images/wave.svg" alt="">
+        </div>
         <div class="banner-image">
             <img src="@/assets/images/robot.gif" alt="">
         <img class=" elipse purple-elipse1"src="@/assets/images/purple_elipse.png" alt="" >
@@ -106,6 +110,24 @@
     height: 200px;
     left: 1179px;
     top: 518px;
+}
+.fullwidth{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100vw;
+    height: 100%;
+    transform: translateX(-50%);
+    z-index: 0;
+    overflow: visible;
+}
+.banner-wave1{
+    width: 100%;
+}
+.banner-wave1{
+    position: absolute;
+    width: 100%;
+    bottom: 70px
 }
 
 
