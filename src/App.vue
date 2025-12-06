@@ -1,47 +1,47 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import Banner from './components/Banner.vue';
+import Footer from './components/Footer.vue';
+import Gallery from './components/Gallery.vue';
+import Header from './components/Header.vue';
+import OurCourses from './components/OurCourses.vue';
+import Robotics from './components/Robotics.vue';
+import RunnigLine from './components/RunnigLine.vue';
+import RunningLine2 from './components/RunningLine2.vue';
+import Ticket from './components/Ticket.vue';
+import Works from './components/Works.vue';
+
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <div class="container">
+  <Header />
+  <Banner />
+  <RunnigLine />
+  <OurCourses />
+  <RoboticsСlub />
+  <Robotics />
+  <Works />
+  <RunningLine2 />
+  <Ticket />
+  <Gallery />
+  <Footer />
 
-    <div class="wrapper">
-      <HelloWorld msg="MAY" />
-    </div>
-  </header>
+  </div>
 
-  <main>
-    <TheWelcome />
-  </main>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
+<style>
+
+body {
+  font-family: 'Dela Gothic';
 }
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.container{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
 }
 </style>
