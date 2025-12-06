@@ -34,13 +34,13 @@ import Works from './components/Works.vue';
 
 body {
   font-family: 'Dela Gothic';
+  background-color: white;
 }
 .container{
-    width: 100%;
-    max-width: 1180px;
+    width: 1200px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    box-sizing: border-box;
+  
+    align-items: center;
+    justify-content: space-between;
 }
 </style>
