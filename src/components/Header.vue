@@ -25,13 +25,13 @@
 }
 
 .nav {
-    max-width: 1200px;       /* ограничение контента */
-    margin: 0 auto;           /* центрирование */
+    max-width: 1200px;
+    margin: 0 auto;
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;          /* отступы от краёв */
+    padding: 0 20px;
 }
 
 .logo {
