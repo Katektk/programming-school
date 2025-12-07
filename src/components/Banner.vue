@@ -35,7 +35,7 @@
     overflow: visible;
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .banner-content h1 {
@@ -115,7 +115,7 @@
 .fullwidth{
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 51.7%;
     width: 100vw;
     height: 100%;
     transform: translateX(-50%);
