@@ -1,6 +1,6 @@
 <template>
 <header class="header">
-    <div class="container2"> 
+    <div class="container"> 
         <div class="wraper">
         <nav class="nav">
             <img src="@/assets/images/logo-robot.png" class="logo">
@@ -21,7 +21,7 @@
 
 <style>
 
-.container2 {
+.container {
     max-width: 1300px;
     margin: 0 auto;
 }
@@ -62,8 +62,8 @@
 }
 .menu {
     display: flex;
-    gap: 40px; /* расстояние между ссылками */
-    flex-wrap: nowrap; /* чтобы все оставались в одной линии */
+    gap: 40px; 
+    flex-wrap: nowrap; 
 }
 .menu a {
     color: white;
