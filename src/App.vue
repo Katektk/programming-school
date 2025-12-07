@@ -33,7 +33,7 @@ import Works from './components/Works.vue';
 <style>
 
 body {
-  font-family: 'Dela Gothic';
+  font-family: "Marmelad";
   background-color: white;
 }
 
