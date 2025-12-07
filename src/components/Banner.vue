@@ -18,14 +18,11 @@
                     <img src="@/assets/images/robot.gif" alt="">
                 </div>
             </div>
-
         </div>
         <div class="banner-wave1">
             <img src="@/assets/images/wave.svg" alt="">
         </div>
-
     </section>
-    
 </template>
 
 <style>
@@ -73,57 +70,10 @@
     cursor: pointer;
     text-transform:uppercase;
     font-weight: 600;
-    margin-left: 50px;
+    position: relative;
+    left: calc(30% - 90px);
 }
 .banner-image {
     max-width: 560px;
 }
-
-.purple-elipse1 {
-    position: absolute;
-    top: -33px;
-    width: 300px;
-    height: 300px;
-}
-.purple-elipse2 {
-    position: absolute;
-    width: 110px;
-    height: 110px;
-    top: 7px;
-    right: 47px;
-}
-.pink-elipse1 {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    right: 321px;
-    top: -32px;
-}
-.pink-elipse2 {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    bottom: -40px;
-}
-.pink-elipse3 {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    right: -8px;
-    bottom: -26px;
-}
-.banner-wave1 {
-    width: 100%;
-    bottom: 10px;
-}
-
-
-
-
-
-
-
-
-
-
 </style>
