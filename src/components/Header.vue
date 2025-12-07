@@ -1,38 +1,58 @@
 <template>
-    <header class="header">
+<header class="header">
+    <div class="container2"> 
         <div class="wraper">
         <nav class="nav">
             <img src="@/assets/images/logo-robot.png" class="logo">
-
             <div class="menu">
                 <a href="#">О нас</a>
                 <a href="#">Курсы</a>
                 <a href="#">Кружок робототехники</a>
                 <a href="#">Билет в будущее</a>
                 <a href="#">Контакты</a>
+                <a class="btn" href="#">Записаться на урок</a>
             </div>
-
-            <a class="btn" href="#">Записаться на урок</a>
         </nav>
+</div>
+
     </div>
-    </header>
+</header>
 </template>
 
 <style>
 
-.header {
-    background-color: #3F1B62;
+.container2 {
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
-.nav {
-    max-width: 1200px;
+
+.wraper {
     margin: 0 auto;
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    
 }
+.nav{
+    flex-grow: 1;
+    display: flex;
+    gap: 107px;
+}
+
+.header {
+    background-color: #3F1B62;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    z-index: 0;
+    overflow: visible;
+}
+
 
 .logo {
     width: 50px;
@@ -41,7 +61,7 @@
 
 .menu {
     display: flex;
-    gap: 40px;
+    gap: 68px;
 }
 
 .menu a {

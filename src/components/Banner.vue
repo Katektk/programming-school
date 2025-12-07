@@ -35,6 +35,7 @@
     overflow: visible;
     display: flex;
     justify-content: space-between;
+    margin-top: 100px;
 }
 
 .banner-content h1 {
