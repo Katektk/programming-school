@@ -1,5 +1,77 @@
 <template>
-    <div>
-        <h2>Header</h2>
+    <header class="header">
+        <div class="wraper">
+        <nav class="nav">
+            <img src="@/assets/images/logo-robot.png" class="logo">
+
+            <div class="menu">
+                <a href="#">О нас</a>
+                <a href="#">Курсы</a>
+                <a href="#">Кружок робототехники</a>
+                <a href="#">Билет в будущее</a>
+                <a href="#">Контакты</a>
+            </div>
+
+            <a class="btn" href="#">Записаться на урок</a>
+        </nav>
     </div>
+    </header>
 </template>
+
+<style>
+
+.header {
+    background-color: #3F1B62;
+}
+
+.nav {
+    max-width: 1200px;       /* ограничение контента */
+    margin: 0 auto;           /* центрирование */
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;          /* отступы от краёв */
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn {
+    background-color: #ff007f;
+    padding: 14px 32px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+</style>
