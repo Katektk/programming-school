@@ -5,7 +5,6 @@ import OurCourses from './components/OurCourses.vue';
 import Footer from './components/Footer.vue';
 import Gallery from './components/Gallery.vue';
 import RoboticsСlub from './components/RoboticsСlub.vue';
-import Robotics from './components/Robotics.vue';
 import RunnigLine from './components/RunnigLine.vue';
 import RunningLine2 from './components/RunningLine2.vue';
 import Ticket from './components/Ticket.vue';
@@ -18,14 +17,11 @@ import Works from './components/Works.vue';
   <RunnigLine />
   <OurCourses />
   <RoboticsСlub />
-  <Robotics />
   <Works />
   <RunningLine2 />
   <Ticket />
   <Gallery />
   <Footer />
-
-
 </template>
 
 <style>

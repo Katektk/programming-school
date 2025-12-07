@@ -109,7 +109,6 @@
 <style>
 
 .coursers {
-    padding: 60px 0;
     text-align: center;
 }
 .coursers-title {
@@ -143,13 +142,14 @@
     align-items: center;
 }
 .course-name {
-    padding: 8px 20px;
+    padding: 10px 0;
     border: 3px solid #3F1B62;
     border-radius: 12px;
     font-size: 18px;
     font-weight: 700;
+    width: 350px;
     color: #3F1B62;
-    width: 400px;
+    background-color: #f5e3ff;
 }
 .course-img {
     max-width: 300px;
