@@ -1,41 +1,44 @@
 <template>
     <section class="banner">
-        <div class="banner-content">
-            <h1>Школа Программирования <br>
+        <div class="banner-wave2">
+            <img src="@/assets/images/wave.svg" alt="">
+        </div>
+        <div class="container">
+            <div class="banner-content">
+                <div>
+                    <h1>Школа Программирования <br>
             и Роботехники</h1>
             <form class="banner-form">
             <input type="tel" placeholder="+7 999-999-99-99">
             <input type="text" placeholder="Имя">
             <button>Заказать звонок</button>
             </form>
-        </div>
-        <div class="fullwidth">
-            <img class="banner-wave1" src="@/assets/images/wave.svg" alt="">
-            <img class="banner-wave2" src="@/assets/images/wave.svg" alt="">
-        </div>
-        <div class="banner-image">
-            <img src="@/assets/images/robot.gif" alt="">
-        <img class=" elipse purple-elipse1"src="@/assets/images/purple_elipse.png" alt="" >
-        <img class=" elipse purple-elipse2"src="@/assets/images/purple_elipse.png" alt="" >
-        <img class="elipse pink-elipse1"src="@/assets/images/pink_elipse.png" alt="" >
-        <img class="elipse pink-elipse2"src="@/assets/images/pink_elipse.png" alt="" >
-        <img class="elipse pink-elipse3"src="@/assets/images/pink_elipse.png" alt="" >
+                </div>
+                <div class="banner-image">
+                    <img src="@/assets/images/robot.gif" alt="">
+                </div>
+            </div>
 
         </div>
-
+        <div class="banner-wave1">
+            <img src="@/assets/images/wave.svg" alt="">
+        </div>
 
     </section>
     
 </template>
 
 <style>
+.container {
+    max-width: 1290px;
+    margin: 0 auto;
+}
 .banner {
     position: relative;
-    padding: 80px 0 150px;
-    overflow: visible;
+}
+.banner-content {
     display: flex;
     justify-content: space-between;
-    margin-top: 150px;
 }
 
 .banner-content h1 {
@@ -44,7 +47,6 @@
     line-height: 1.2;
     color: #3F1B62;
     text-transform:uppercase;
-    margin-bottom: 50px;
 }
 .banner-form {
     display: flex;
@@ -79,18 +81,16 @@
 
 .purple-elipse1 {
     position: absolute;
-    left: -197px;
-    top: -93px;
+    top: -33px;
     width: 300px;
     height: 300px;
-    margin-top: 20px;
 }
 .purple-elipse2 {
     position: absolute;
     width: 110px;
     height: 110px;
     top: 7px;
-    right: -132px;
+    right: 47px;
 }
 .pink-elipse1 {
     position: absolute;
@@ -109,31 +109,16 @@
     position: absolute;
     width: 200px;
     height: 200px;
-    left: 1179px;
-    top: 518px;
+    right: -8px;
+    bottom: -26px;
 }
-.fullwidth{
-    position: absolute;
-    top: 0;
-    left: 51.7%;
-    width: 100vw;
-    height: 100%;
-    transform: translateX(-50%);
-    z-index: 0;
-    overflow: visible;
-}
-.banner-wave1{
-    position: absolute;
+.banner-wave1 {
     width: 100%;
     bottom: 10px;
 }
-.banner-wave2{
-    position: absolute;
-    width: 100%;
-    top: -35px;
 
-    
-}
+
+
 
 
 

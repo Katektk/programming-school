@@ -21,9 +21,6 @@
 
 <style>
 
-.container {
-    width: 100%;
-}
 
 .wraper {
     margin: 0 auto;
@@ -37,16 +34,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    flex-wrap: nowrap; 
-    gap: 65px; 
+    gap: 45px 
 }
 
 .header {
     background-color: #3F1B62;
-    position: absolute;
-    left: 50%;
-    width: 100%;
-    transform: translateX(-50%);
 }
 
 .logo {
@@ -56,8 +48,7 @@
 
 .menu {
     display: flex;
-    gap: 60px; 
-    flex-wrap: nowrap;
+    gap: 49px;
 }
 
 .menu a {

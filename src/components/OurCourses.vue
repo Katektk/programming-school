@@ -107,12 +107,7 @@
 </template>
 
 <style>
-.container {
-    width: 1180px;
-    margin: 0 auto;
-    align-items: center;
 
-}
 .coursers {
     padding: 60px 0;
     text-align: center;
