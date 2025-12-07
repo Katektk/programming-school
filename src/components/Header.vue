@@ -22,8 +22,7 @@
 <style>
 
 .container {
-    max-width: 1300px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .wraper {
@@ -32,49 +31,46 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    
-}
-
-.header {
-    background-color: #3F1B62;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 100%;
-    transform: translateX(-50%);
-    z-index: 0;
-    overflow: visible;
-}
-
-
-.logo {
-    width: 50px;
-    height: auto;
 }
 
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; 
     gap: 65px; 
 }
+
+.header {
+    background-color: #3F1B62;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    width: 65px;
+    height: auto;
+}
+
 .menu {
     display: flex;
-    gap: 40px; 
-    flex-wrap: nowrap; 
+    gap: 60px; 
+    flex-wrap: nowrap;
 }
+
 .menu a {
     color: white;
     text-decoration: none;
     font-size: 22px;
     font-weight: 600;
+    flex-shrink: 0;
 }
 
 .btn {
     background-color: #ff007f;
-    padding: 14px 32px;
+    padding: 10px 50px;
     border-radius: 30px;
     color: white;
     font-weight: 700;
