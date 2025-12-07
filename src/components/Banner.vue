@@ -123,12 +123,16 @@
     overflow: visible;
 }
 .banner-wave1{
-    width: 100%;
-}
-.banner-wave1{
     position: absolute;
     width: 100%;
-    bottom: 70px
+    bottom: 10px;
+}
+.banner-wave2{
+    position: absolute;
+    width: 100%;
+    top: -35px;
+
+    
 }
 
 
