@@ -9,9 +9,9 @@
             Также в нашей школе проходят занятия по РОБОТОТЕХНИКЕ! 
             Ребята учатся собирать и управлять конструктором. 
             Придумывать новые модели, находить способы решения 
-            трудных задач и развивать логическое мышление.
+            трудных задач и развивать логическое мышление
           </p>
-          <button class="robot-btn">Узнать больше</button>
+          <button class="btn">Узнать больше</button>
         </div>
        </div>
       </div>
@@ -21,9 +21,7 @@
 <style>
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  max-width: 100%;
 }
 
 .robotics-club {
@@ -32,46 +30,47 @@
 
 .image {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  gap: 30px;
 }
 
 .robot {
-  max-width: 450px;
-  width: 100%;
+  max-width: 550px;
+  height: 550px;
   object-fit: contain;
 }
 
 .text {
-  
+  max-width: 660px;
+  text-align: center;
 }
 
 .text h1 {
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 50px;
   color: #3F1B62;
   margin-bottom: 20px;
+  text-align: center;
 }
 
-.robot-text p {
-  font-size: 4px;
-  line-height: 1.4;
-  margin-bottom: 30px;
+.text p {
+  font-size: 30px;
+  line-height: 1.5;
+  text-align: center;
 }
 
-.robot-btn {
+.btn {
   background: #6f239c;
   color: white;
   border: none;
   border-radius: 40px;
   padding: 16px 40px;
-  font-size: 20px;
+  font-size: 16px;
   cursor: pointer;
-  transition: 0.2s;
+  align-self: center;
+  
 }
 
-.robot-btn:hover {
+.btn:hover {
   opacity: 0.85;
 }
 </style>
