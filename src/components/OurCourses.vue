@@ -188,5 +188,8 @@
     
 
 }
+.course-btn:hover {
+    background-color:#ff007f;
+}
 
 </style>

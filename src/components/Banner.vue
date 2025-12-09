@@ -73,6 +73,9 @@
     position: relative;
     left: calc(30% - 90px);
 }
+.banner-form button:hover {
+    background-color:#ff007f;
+}
 .banner-image {
     max-width: 560px;
 }

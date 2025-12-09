@@ -45,6 +45,9 @@
     text-decoration: none;
     line-height: 190%;
 }
+.footer-phone:hover {
+    color: #ff007f;
+}
 .footer-adress {
     color: white;
     font-size: 20px;
