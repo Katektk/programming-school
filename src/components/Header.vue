@@ -21,7 +21,6 @@
 
 <style>
 
-
 .wraper {
     margin: 0 auto;
     height: 100px;
