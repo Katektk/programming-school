@@ -8,13 +8,13 @@
       <span>• Присоединяйся •&nbsp;</span>
     </div>
     <div class="marquee-content">
-      <span> Присоединяйся •&nbsp;</span>
+      <span>• Присоединяйся •&nbsp;</span>
       <span>• Присоединяйся •&nbsp;</span>
       <span>• Присоединяйся •&nbsp;</span>
       <span>• Присоединяйся •&nbsp;</span>
     </div>
     <div class="marquee-content">
-      <span> Присоединяйся •&nbsp;</span>
+      <span>• Присоединяйся •&nbsp;</span>
       <span>• Присоединяйся •&nbsp;</span>
       <span>• Присоединяйся •&nbsp;</span>
       <span>• Присоединяйся •&nbsp;</span>
