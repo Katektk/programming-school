@@ -1,7 +1,7 @@
 <template>
   <div class="carousel">
     <div class="carousel-wrapper">
-      <button class="arrow-left" @click="prev">&#10094;</button>
+      <button class="arrow" @click="prev">&#10094;</button>
       
       <div class="carousel-images">
         <img :src="images[prevImage]" class="side left" />
@@ -9,7 +9,7 @@
         <img :src="images[nextImage]" class="side right" />
       </div>
     
-      <button class="arrow-right" @click="next">&#10095;</button>
+      <button class="arrow" @click="next">&#10095;</button>
     </div>
 
     <div class="dots">
@@ -58,7 +58,7 @@ export default {
       this.currentImage = index;
     },
     startAutoSlide() {
-      this.intervalId = setInterval(this.next, 1000);
+      this.intervalId = setInterval(this.next, 5000);
     },
     stopAutoSlide() {
       clearInterval(this.intervalId);
@@ -76,48 +76,58 @@ export default {
 <style>
 
 .carousel {
-  width: 600px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   position: relative;
 }
 
 .carousel-wrapper {
+  height: 400px;
   display: flex;
   align-items: center;
   position: relative;
+  justify-content: center;
+  background-color:#e5d9f3;
+  padding: 40px 0;
 }
 
 .arrow {
-  font-size: 30px;
-  background: none;
+  margin-top: 20px;
+  font-size: 20px;
+  background-color: #6f239c;
+  color: white;
   border: none;
   cursor: pointer;
-  z-index: 10;
+  padding: 7px 15px;
+  border-radius: 1000px;
 }
 
 .carousel-images {
   display: flex;
   align-items: center;
   overflow: hidden;
+   gap: 20px;
 }
 
 .carousel-images img {
-  transition: all 0.5s;
+  transition: all 0.5s ease;
 }
 
 .carousel-images img.main {
-  width: 300px;
-  margin: 0 20px;
+  width: 500px;
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .carousel-images img.side {
-  width: 100px;
+  width: 300px;
   opacity: 0.5;
+  transform: scale(0.9);
 }
 
 .carousel-images img.side.left {
-  margin-right: 10px;
+  margin-right:10px;
 }
 
 .carousel-images img.side.right {
@@ -125,7 +135,9 @@ export default {
 }
 
 .dots {
-  margin-top: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .dots span {
@@ -133,12 +145,12 @@ export default {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #ccc;
+  background: #9e84a1;
   margin: 0 5px;
   cursor: pointer;
 }
 
 .dots span.active {
-  background: #333;
+  background: #050005;
 }
 </style>
