@@ -1,57 +1,61 @@
 <template>
   <div class="carousel">
     <div class="carousel-wrapper">
-      <button class="arrow left" @click="prev">&#10094;</button>
+      <button class="arrow-left" @click="prev">&#10094;</button>
       
       <div class="carousel-images">
-        <img :src="images[prevIndex]" class="side left" />
-        <img :src="images[currentIndex]" class="main" />
-        <img :src="images[nextIndex]" class="side right" />
+        <img :src="images[prevImage]" class="side left" />
+        <img :src="images[currentImage]" class="main" />
+        <img :src="images[nextImage]" class="side right" />
       </div>
     
-      <button class="arrow right" @click="next">&#10095;</button>
+      <button class="arrow-right" @click="next">&#10095;</button>
     </div>
 
-   
     <div class="dots">
       <span 
-        v-for="(img, index) in images" 
-        :key="index" 
-        :class="{active: index === currentIndex}" 
-        @click="goTo(index)">
+        v-for="(img, image) in images" 
+        :key="image" 
+        :class="{active: image === currentImage}" 
+        @click="goTo(image)">
       </span>
     </div>
   </div>
 </template>
 
 <script>
+  
+import childs from '@/assets/images/childs.jpg'
+import desk from '@/assets/images/desk.jpg'
+import group from '@/assets/images/group.jpg'
+import list from '@/assets/images/list.jpg'
+
 export default {
   data() {
     return {
-     images: [
-     require('@/assets/images/childs.jpg'),
-     require('@/assets/images/desk.jpg'),
-     require('@/assets/images/group.jpg'),
-     require('@/assets/images/list.jpg')]
+      images: [childs, desk, group, list],
+      currentImage: 0,
+      intervalId: null
     };
   },
+  
   computed: {
-    prevIndex() {
-      return (this.currentIndex - 1 + this.images.length) % this.images.length;
+    prevImage() {
+      return (this.currentImage - 1 + this.images.length) % this.images.length;
     },
-    nextIndex() {
-      return (this.currentIndex + 1) % this.images.length;
-    },
+    nextImage() {
+      return (this.currentImage + 1) % this.images.length;
+    }
   },
   methods: {
     next() {
-      this.currentIndex = this.nextIndex;
+      this.currentImage = this.nextImage;
     },
     prev() {
-      this.currentIndex = this.prevIndex;
+      this.currentImage = this.prevImage;
     },
     goTo(index) {
-      this.currentIndex = index;
+      this.currentImage = index;
     },
     startAutoSlide() {
       this.intervalId = setInterval(this.next, 1000);
@@ -70,6 +74,7 @@ export default {
 </script>
 
 <style>
+
 .carousel {
   width: 600px;
   margin: 0 auto;
