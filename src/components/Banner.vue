@@ -8,10 +8,11 @@
                 <div>
                     <h1>Школа Программирования <br>
             и Роботехники</h1>
-            <form class="banner-form">
-            <input type="tel" placeholder="+7 999-999-99-99">
-            <input type="text" placeholder="Имя">
-            <button>Заказать звонок</button>
+            <form class="banner-form" @submit.prevent="sendForm">
+                <input v-model="phone" type="tel" placeholder="+7 999-999-99-99" required />
+                <input v-model="name" type="text" placeholder="Имя" required />
+                <button type="submit">{{ loading ? "Отправка..." : "Заказать звонок" }}</button>
+                <p v-if="status" class="status">{{ status }}</p>
             </form>
                 </div>
                 <div class="banner-image">
@@ -24,6 +25,43 @@
         </div>
     </section>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            phone: "",
+            name: "",
+            loading: false,
+            status: ""
+        };
+    },
+    methods: {
+        async sendForm() {
+            this.loading = true;
+            this.status = "";
+            const token = "8544309188:AAGLQ0JguNHCZD_ca-fExaoVo4Dh6eip3JE";
+            const chat_id = "1056711179";
+            const text = `📩 Новая заявка:
+            📞 Телефон: ${this.phone}
+            👤 Имя: ${this.name}`;
+            try {
+        const res = await fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${encodeURIComponent(text)}`);
+        const data = await res.json();
+        if (data.ok) {
+            this.status = "✔️ Заявка отправлена!";
+            this.phone = "";this.name = "";
+        } else {
+            this.status = "Ошибка отправки";
+        }
+    } catch (e) {
+        this.status = "Ошибка соединения";
+    }
+    this.loading = false;
+    }
+}
+};
+</script>
 
 <style>
 .container {
