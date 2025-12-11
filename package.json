@@ -2,7 +2,7 @@
   "name": "programming-school",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://Katektk.github.io/programming-school/",
+  "homepage": "https://Katektk.github.io/programming-school", 
   "type": "module",
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
