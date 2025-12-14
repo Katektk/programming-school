@@ -1,4 +1,5 @@
 <template>
+    <section id="our-courses"></section>
     <section class="coursers">
         <div class="container">
             <h1 class="coursers-title">Наши курсы</h1>

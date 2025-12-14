@@ -1,4 +1,5 @@
 <template>
+  <section id="robotics-club"></section>
     <section class="robotics-club">
        <div class="container"> 
        <div class="image-robotics">

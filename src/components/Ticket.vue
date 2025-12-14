@@ -1,4 +1,5 @@
 <template>
+  <section id="ticket"></section>
   <section class="future-ticket">
     <div class="container">
       <div class="content-ticket">

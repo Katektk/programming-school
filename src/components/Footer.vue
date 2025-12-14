@@ -1,4 +1,5 @@
 <template>
+    <section id="footer"></section>
     <footer class="footer">
         <div class="container">
             <div class="footer-wrapper">

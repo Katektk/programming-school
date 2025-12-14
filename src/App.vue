@@ -4,7 +4,7 @@ import Banner from './components/Banner.vue';
 import OurCourses from './components/OurCourses.vue';
 import Footer from './components/Footer.vue';
 import Gallery from './components/Gallery.vue';
-import RoboticsСlub from './components/RoboticsСlub.vue';
+import RoboticsСlub from './components/RoboticsClub.vue';
 import RunnigLine from './components/RunnigLine.vue';
 import RunningLine2 from './components/RunningLine2.vue';
 import Ticket from './components/Ticket.vue';

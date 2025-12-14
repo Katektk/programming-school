@@ -5,20 +5,44 @@
         <nav class="nav">
             <img src="@/assets/images/logo-robot.png" class="logo">
             <div class="menu">
-                <a href="#">О нас</a>
-                <a href="#">Курсы</a>
-                <a href="#">Кружок робототехники</a>
-                <a href="#">Билет в будущее</a>
-                <a href="#">Контакты</a>
-                <a class="btn" href="#">Записаться на урок</a>
+          <a @click="scrollTo('our-courses')">Курсы</a>
+          <a @click="scrollTo('robotics-club')">Кружок робототехники</a>
+          <a @click="scrollTo('ticket')">Билет в будущее</a>
+          <a @click="scrollTo('footer')">Контакты</a>
+          <a class="btn" @click="scrollTo('signup')">Записаться на урок</a>
             </div>
         </nav>
 </div>
 </div>
 </header>
 </template>
+<script>
+export default {
+  methods: {
+    scrollTo(id) {
+      const el = document.getElementById(id)
+      if (!el) return
+
+      const headerHeight = 100
+      const y =
+        el.getBoundingClientRect().top +
+        window.pageYOffset -
+        headerHeight
+
+      window.scrollTo({
+        top: y,
+        behavior: 'smooth'
+      })
+    }
+  }
+}
+</script>
 
 <style>
+
+.html {
+  scroll-behavior: smooth;
+}
 
 .wraper {
     margin: 0 auto;
@@ -36,11 +60,18 @@
 }
 
 .header {
-    background-color: #3F1B62;
+  background-color: #3F1B62;
+  position: fixed;   /* ← ВОТ ЭТО ЗАКРЕПЛЕНИЕ */
+  top: 0;            /* ← прижимаем к верху */
+  left: 0;
+  width: 100%;       /* ← на всю ширину */
+  height: 80px;
+  background-color: #3F1B62;
+  z-index: 1000;     
 }
 
 .logo {
-    width: 65px;
+    width: 50px;
     height: auto;
 }
 
